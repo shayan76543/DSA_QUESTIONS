@@ -1,3 +1,4 @@
+# subarray target question
 def sub_array():
     arr=[4,1,7,6,3,9,6,5,3,5,1]
     n=len(arr)
@@ -15,4 +16,6 @@ def sub_array():
             return "find",start,i,n-1 
     return "not found"    
 print(sub_array())
+# Time complexity o(n)
+# space complexity o(1)
         
