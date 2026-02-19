@@ -1,0 +1,8 @@
+# THIS IS ALTERNATE LIST PROGRAM
+arr=[2,3,4,5,7,1,0,9,7,6]
+n=len(arr)
+for i in range(n):
+    if i%2==0:
+        print(arr[i])
+# time complexity 0(n)
+# space complexity 0(n)
