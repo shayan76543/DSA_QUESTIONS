@@ -1,5 +1,5 @@
 # JUMP GAME
-def jump():
+def jump(arr):
     n=len(arr)
     max_reach=arr[0]
     step=arr[0]
