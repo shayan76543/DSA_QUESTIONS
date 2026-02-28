@@ -13,3 +13,9 @@ def First_occurance():
             return i
     return -1
 print(First_occurance())
+# 🔎 What is Naive String Matching Approach?
+
+# Naive means:
+
+# Simple / basic / straightforward method
+# (without optimization, without smart tricks)
