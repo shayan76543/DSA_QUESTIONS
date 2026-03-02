@@ -8,7 +8,7 @@ def sub_array():
     end=0
     found=False
     starts=0
-    max_subarray_target=0
+    indexes_of_result=0
     for i in range(0,n):
         current+=arr[i]
         if current>target:
@@ -17,15 +17,15 @@ def sub_array():
                 start+=1
         if current==target:
             found=True
-            if max_subarray_target<i-start:
-                max_subarray_target=i-start
-                starts=start
-                end=i
+            if indexes_of_result<i-start:
+                indexes_of_result=i-start-1
+            starts=start
+            end=i
     if not found:
         return "not found"
     found=False
     for j in range(starts,end+1): 
         longest_subarray.append(arr[j])
-    return longest_subarray
+    return "result_list=",longest_subarray,"Resul_found_from=",arr,"indexes_of_result=",indexes_of_result
 print(sub_array())
-        
+    
