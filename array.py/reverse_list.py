@@ -5,7 +5,7 @@ j=n-1
 for i in range(0,n//2):
     arr[i],arr[j]=arr[j],arr[i]
     j-=1     
-print(arr,end="")
+print(arr)
 # TIME COMPLEXITY: O(n)
 # SPACE COMPLEXITY: O(1)
 
