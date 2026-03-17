@@ -1,11 +1,10 @@
 def string_rotation():
     original="abcd"
     n=len(original)
-    check="cbab"
-    k=1
-    for i in range(n):
-        check=check[k:]+check[:k]
-        if check==original:
-            return "rotation successfull"
+    check="cdab"
+    if len(original)!=len(check):
+        return "fail rotation"
+    if original in check+check:
+        return "rotation successfull"
     return "rotation is fail"
 print(string_rotation())
