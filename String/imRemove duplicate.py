@@ -9,7 +9,8 @@ def remove_duplicate():
         if  not seen[index]:
             seen[index]=True
             arr[write]=arr[read]
-            write+=1
+            write+=1 
+            # with write variable we can ignore all remaining value after overwriting 
     result="".join(arr[:write])
     return result
 print(remove_duplicate())
