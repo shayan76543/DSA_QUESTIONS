@@ -10,4 +10,4 @@ def non_repeating_longest_sub(string):
         box.add(string[right])
         max_len=max(max_len,right-left+1)
     return max_len
-print(non_repeating_longest_sub("khawshd"))
+print(non_repeating_longest_sub("shayan_ahmad"))
