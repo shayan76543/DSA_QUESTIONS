@@ -14,12 +14,23 @@ class linklist:
             t1.next=temp
         else:
             self.head=temp
+    def insert_beggining(self,value):
+        temp=node(value)
+        temp.next=self.head
+        self.head=temp
     def print_linklist(self):
         t1=self.head
         while(t1!=None):
             print(t1.data)
             t1=t1.next
 first=linklist()
-first.insert_end(30)
-first.insert_end(20)
+first.insert_beggining(31)
+
+first.insert_end(64)
+first.insert_end(42)
+first.insert_end(53)
+first.insert_end(32)
+first.insert_beggining(31)
+first.insert_beggining(21)
+
 first.print_linklist()
