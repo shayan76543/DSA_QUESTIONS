@@ -25,12 +25,10 @@ class linklist:
             t1=t1.next
 first=linklist()
 first.insert_beggining(31)
-
 first.insert_end(64)
 first.insert_end(42)
 first.insert_end(53)
 first.insert_end(32)
 first.insert_beggining(31)
 first.insert_beggining(21)
-
 first.print_linklist()
