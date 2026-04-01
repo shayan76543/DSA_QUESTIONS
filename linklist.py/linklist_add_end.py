@@ -23,6 +23,15 @@ class linklist:
         while(t1!=None):
             print(t1.data)
             t1=t1.next
+    def insert_mid(self,value,x):
+        temp=node(value)
+        t1=self.head
+        while (t1.next!=None):
+            if (t1.data==x):
+                temp.next=t1.next
+                t1.next=temp
+            t1=t1.next
+
 first=linklist()
 first.insert_beggining(31)
 first.insert_end(64)
@@ -31,4 +40,5 @@ first.insert_end(53)
 first.insert_end(32)
 first.insert_beggining(31)
 first.insert_beggining(21)
+first.insert_mid(12,31)
 first.print_linklist()
