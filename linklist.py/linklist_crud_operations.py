@@ -27,9 +27,12 @@ class linklist:
             t1.address=temp
         else:
             self.head=temp
-    def delete_mid(self,value):
+    def delete_ll(self,value):
         t1=self.head
         previous=t1
+        if (t1.info==value): # this condition for delete first element from linklist 
+            self.head=t1.address
+            return 
         while (t1.address!=None):
             if (t1.info==value):
                 previous.address=t1.address
@@ -37,6 +40,8 @@ class linklist:
             else:
                 previous=t1
                 t1=t1.address
+        if (t1.info==value):
+            previous.address=None
     def print(self):
         t1=self.head
         while t1!=None: # here we used this to check wether our node is exit or not 
@@ -52,7 +57,7 @@ first_list.insert_end(6)
 first_list.insert_end(7)
 first_list.insert_beggining(0)
 first_list.insert_mid(4,3)
-first_list.delete_mid(11)
+first_list.delete_ll(7)
 first_list.print()
 
 
