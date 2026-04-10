@@ -64,8 +64,6 @@ class dll:
             print(t1.data, end="  <--> ")
             t1 = t1.address
         print(t1.data)
-
-
 obj1 = dll()
 obj1.insert_end(33)
 obj1.insert_end(44)

@@ -7,7 +7,6 @@ class linklist:
         self.head=head
     def insert_beggining(self,value):
         temp=node(value)
-        t1=self.head
         temp.address=self.head
         self.head=temp
     def insert_mid(self,value,x):
@@ -45,7 +44,7 @@ class linklist:
     def print(self):
         t1=self.head
         while t1!=None: # here we used this to check wether our node is exit or not 
-            print(t1.info)
+            print(t1.info,end="-->")
             t1=t1.address
     def lenght_counting(self): # for length counting of linklist
         t1=self.head
