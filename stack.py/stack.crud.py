@@ -23,3 +23,4 @@ print(obj1.lenght())
 print("delete element from stack-->",obj1.pop())
 print("Last added Element in Stack-->",obj1.peek())
 print(obj1.lenght())
+# they work on "LIFO"
