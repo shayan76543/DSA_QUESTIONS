@@ -3,8 +3,6 @@ class node:
         self.left=None
         self.data=data
         self.right=None
-
-
 def insert(root,value):
     if root is None:
         return node(value)
@@ -24,7 +22,6 @@ def search(root,value):
         return search(root.left,value)
     else:
         return search(root.right,value)
-
 def inorder(root):
     if root!=None:
         inorder(root.left)
