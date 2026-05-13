@@ -1,6 +1,6 @@
 class node:
-    def __init__(self,info,address=None):
-        self.info=info
+    def __init__(self,data,address=None):
+        self.data=data
         self.address=address
 class linklist:
     def __init__(self,head=None):
@@ -13,7 +13,7 @@ class linklist:
         temp=node(value)
         t1=self.head
         while (t1!=None):
-            if (t1.info==x):
+            if (t1.data==x):
                 temp.address=t1.address
                 t1.address=temp
             t1=t1.address
@@ -29,22 +29,22 @@ class linklist:
     def delete_ll(self,value):
         t1=self.head
         previous=t1
-        if (t1.info==value): # this condition for delete first element from linklist 
+        if (t1.data==value): # this condition for delete first element from linklist 
             self.head=t1.address
             return 
         while (t1.address!=None):
-            if (t1.info==value):
+            if (t1.data==value):
                 previous.address=t1.address
                 break
             else:
                 previous=t1
                 t1=t1.address
-        if (t1.info==value):
+        if (t1.data==value):
             previous.address=None
     def print(self):
         t1=self.head
         while t1!=None: # here we used this to check wether our node is exit or not 
-            print(t1.info,end="-->")
+            print(t1.data,end="-->")
             t1=t1.address
     def lenght_counting(self): # for length counting of linklist
         t1=self.head
@@ -64,6 +64,7 @@ first_list.insert_end(6)
 first_list.insert_end(7)
 first_list.insert_beggining(0)
 first_list.insert_mid(4,3)
+first_list.insert_mid(50,0)
 first_list.delete_ll(7)
 first_list.print()
 print(first_list.lenght_counting())
