@@ -12,13 +12,23 @@ class Graph:
     def print_mat(self):
         for row in self.mat:
             print(" ".join(map(str,row)))
+    def dfs(self,src):
+        visited=[False]*self.size
+        stack=[src]
+        while(stack):
+            v=stack.pop()
+            if visited[v]==False:
+                print(v,end="-->")
+                visited[v]=True
+            for i in range(self.size):
+                if self.mat[v][i]==1 and visited[i]==False:
+                    stack.append(i)
 G=Graph(6)
-G.add_edge(3,3)
-G.add_edge(1,2)
-G.add_edge(4,3)
-G.add_edge(3,2)
-G.add_edge(2,2)
-G.add_edge(1,1)
+G.add_edge(1,0)
+G.add_edge(0,2)
 G.add_edge(2,3)
-G.add_edge(0,3)
+G.add_edge(3,5)
+G.add_edge(5,4)
+G.add_edge(2,4)
 G.print_mat()
+G.dfs(0)
