@@ -12,17 +12,6 @@ class Graph:
     def print_mat(self):
         for row in self.mat:
             print(" ".join(map(str,row)))
-    def dfs(self,src):
-        visited=[False]*self.size
-        stack=[src]
-        while(stack):
-            v=stack.pop()
-            if visited[v]==False:
-                print(v,end="-->")
-                visited[v]=True
-            for i in range(self.size):
-                if self.mat[v][i]==1 and visited[i]==False:
-                    stack.append(i)
 G=Graph(6)
 G.add_edge(1,0)
 G.add_edge(0,2)
