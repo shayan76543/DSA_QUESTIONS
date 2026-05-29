@@ -22,7 +22,7 @@ def conquer(array,start,mid,end):
     while second_half<=end:
         merge.append(array[second_half])
         second_half+=1
-    for i in range(len(merge)):
+    for i in range(len(merge))
         array[start+i]=merge[i]
 array=[3,2,4,7,6,9,2,1]
 print(array)
