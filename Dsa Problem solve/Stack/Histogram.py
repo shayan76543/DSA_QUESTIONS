@@ -1,5 +1,5 @@
 def stack():
-    array=[3,3,4,9,2,4,5]
+    array=[3,2,4,3,7,4]
     max_area=0
     stack=[]
     array.append(0)
@@ -15,4 +15,3 @@ def stack():
         stack.append(i)
     return max_area
 print(stack())
-
