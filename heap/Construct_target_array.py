@@ -21,5 +21,4 @@ class Solution:
             total=result+previous
 target=[9,3,5]
 try1=Solution()
-
 print(try1.isPossible(target))
